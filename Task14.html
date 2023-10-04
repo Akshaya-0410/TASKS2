@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task14</title>
+</head>
+
+<style>
+    body{
+        background: linear-gradient();
+    }
+    form li{
+        list-style: none;
+        margin-bottom: 10px;
+        padding: 0px 400px 0px 390px 
+    }
+    form ul li label{
+        float: left;
+        clear: left;
+        width: 200px;
+        text-align: right;
+        margin-right:10px;
+    }
+    form ul li input, select, span{
+        float: left;
+        margin-bottom: 10px;
+    }
+    form textarea {
+        float: left;
+        width: 350px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    [type="submit"] {
+        clear: left;
+        margin: 20px 0 10px 230px;
+        font-size:18px
+    }
+    p{
+        text-align:bottom;
+        padding-top: 450px;
+    }
+    h1{
+        color: blue;
+        text-align: center;
+    }
+    .error{
+        color: red;
+    }
+</style>
+<body style="background: linear-gradient(lavender,rgb(227, 15, 227));">
+    <form id="registration" onsubmit="return formvalidation();">
+        <h1>Registration Form</h1>
+        <ul>
+            <li><label for="FirstName">First Name:</label></li>
+            <li><input type="text" id="Firstname"name="FirstName"/><span id="firstnameError" class="error"></span></li>
+            <li><label for="LastName">Last Name:</label></li>
+            <li><input type="text" id="Lastname" name="LastName"/><span id="lastnameError" class="error"></span></li>
+            <li><label for="Email">Email:</label></li>
+            <li><input type="text" id="Email" name="Email"/><span id="emailError" class="error"></span></li>
+            <li><label for="Password">Password:</label></li>
+            <li><input type="password" id="Password" name="Password"/><span id="passwordError" class="error"></span></li>
+            <li><label for="Re-enterPassword">Re-enter Password:</label></li>
+            <li><input type="password" id="Reentrerpassword" name="ReenterPassword"/><span id="repasswordError" class="error"></span></li>
+            <li><label id="gender">Sex:</label></li>
+            <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+            <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+            <span id="genderError" class="error"></span>
+            <li><label for="Age">Age:</label></li>
+            <li><input type="text" id="Age" name="Age"/><span id="ageError" class="error"></span></li>
+            <li><label for="Phonenum">Phone Number:</label></li>
+            <li><input type="text" id="Phonenum" name="Phonenum"/><span id="phoneError" class="error"></span></li>
+            <li><label for="Address">Address:</label></li>
+            <li><textarea name="Address" id="Address"></textarea><span id="addressError" class="error"></span></li>
+            <li><label for="State">State:</label></li>
+            <li><input type="text"id="State"name="State"/><span id="stateError" class="error"></span></li>
+            <li><label for="Country">Country:</label></li>
+            <li><select name="Country" id="country">
+                <option selected="" value="Default">Choose your country</option>
+                <option value="AF">Australia</option>
+                <option value="AL">Canada</option>
+                <option value="DZ">India</option>
+                <option value="AS">Russia</option>
+                <option value="AD">USA</option>
+                </select>
+            </li>
+            <li><label>Languages known:</label></li>
+            <li><input type="checkbox" name="en" value="en" id="languages"  /><span>English</span></li>
+            <li><input type="checkbox" name="kan" value="kan" id="languages"  /><span>Kannada</span></li>
+            <li><input type="checkbox" name="tel" value="tel" id="languages"  /><span>Telugu</span></li>
+            <li><input type="checkbox" name="hin" value="hin" id="languages" /><span>Hindi</span></li>
+            <li><label></label></li>
+            <li><input type="checkbox" name="declare" value="declaration" checked/><span>Hereby I declare all the given details are true</span></li>
+            <li><p>Login to <a href="https://codemithra.com/">Ethnus</a> website</p></li>
+            <li><input type="submit" name="submit" value="Register" /></li>
+        </ul>
+    
+    </form>
+    <script src="task14.js"></script>
+</body>
+</html>

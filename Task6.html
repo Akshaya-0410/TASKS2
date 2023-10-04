@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+	</script>
+</head>
+<body>
+	<h1 class="text-success text-center">
+		FORM USING BOOTSTRAP
+	</h1>
+	<div class="container">
+		<form action="#">
+			<div class="mb-2">
+			    <label for="validationServer1" class="form-label">Name</label>
+                   <div class="input-group has-validation">
+                        <input type="text" class="form-control is-invalid" id="validationServer1" aria-describedby="inputGroupPrepend3 validationServer1Feedback" required>
+                        <div id="validationServer1Feedback" class="invalid-feedback">
+                            Name is required
+                        </div>
+                    </div>
+			</div>
+			<div class="mb-2">
+				<label for="validationServerEmail" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+                          <input type="text" class="form-control is-invalid" id="validationServerEmail" aria-describedby="inputGroupPrepend3 validationServerEmailFeedback" required>
+                          <div id="validationServerEmailFeedback" class="invalid-feedback">
+                             Email is required
+                            </div>
+                        </div>
+			</div>
+            <div class="mb-2">
+                <label for="validationServerpassword" class="form-label">Password</label>
+				<div class="input-group has-validation">
+					<input type="password" class="form-control is-invalid" id="validationServerpassword" aria-describedby="inputGroupPrepend3 validationServerpasswordFeedback" required>
+					<div id="validationServerpasswordFeedback" class="invalid-feedback">
+						Password is required
+					</div>
+				</div>
+            </div>
+		    <div class="mb-2">
+				<label for="validationDefault04" class="form-label">Hobbies</label>
+				<input type="number" class="form-control" id="form-control">
+			</div>
+
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" type="checkbox"
+						name="remember">
+						Remember me
+				</label>
+			</div>
+			<button type="submit" class="btn bg-success">
+				Submit
+			</button>
+	</div>
+</body>
+</html>

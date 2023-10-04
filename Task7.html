@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS reversenum</title>
+</head>
+<body style="text-align: center; background-color: antiquewhite;">
+    <h1>Reverse of a number</h1>
+    <p> The reverse of the given number is:</p>
+    <p id="demo"></p>
+<script>
+    function reverseFunction(num, reversed = 0) {
+	if (num === 0) {
+		return reversed;
+	}
+	return reverseFunction(Math.floor(num / 10),
+		reversed * 10 + num % 10);
+    }
+    document.getElementById("demo").innerHTML= reverseFunction(102949);
+
+</script>
+</body>
+</html>
